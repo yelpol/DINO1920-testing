@@ -11,6 +11,12 @@ package wmi.sd;
  */
 public class Dodawanie {
     public static String dodawanie(String a, String b){
-        return "";
+        int aa = Integer.valueOf(a);
+        int bb = Integer.valueOf(b);
+        
+        if(aa<=100 && bb<=100){
+            return Integer.toString(aa+bb);
+        }
+        return "etam co mnie to";
     }
 }
