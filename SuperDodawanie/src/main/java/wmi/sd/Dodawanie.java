@@ -21,14 +21,14 @@ public class Dodawanie {
                 return Integer.toString(aa+bb);
             }
             
-            //moje start
+            
             if(!isInteger(b)){
                 return "Niedozwolona operacja";
             }
             if(aa>=1000 && aa<=1200){
                 int wynik = aa + bb;
                 return "HEX: " + Integer.toHexString(wynik);
-            } //koniec
+            }
             else if (aa>1200 && aa<=1300) {
                 int wynik = aa + aa;
                 return "SPECJALNY WYNIK HEX DLA CIEBIE: " + Integer.toHexString(wynik);
