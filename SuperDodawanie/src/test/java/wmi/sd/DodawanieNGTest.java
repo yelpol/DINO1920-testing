@@ -86,7 +86,7 @@ public class DodawanieNGTest {
 
     @Test
     public void testDodawanie6() {
-        System.out.println("ddawanie6");
+        System.out.println("dodawanie6");
         Random r = new Random();
         for(int i = 0; i < 5; i++){
             int a = r.nextInt((1200 - 1100) + 1) + 1100;
