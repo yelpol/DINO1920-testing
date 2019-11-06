@@ -15,9 +15,21 @@ import java.util.List;
  */
 public class Dodawanie {
     public static String dodawanie(String a, String b){
+
         PizzaFactory pizzaFactory = new PizzaFactory();
         if (pizzaFactory.CanMakePizza(a,b)){
             return pizzaFactory.Make(a,b);
+        }
+       if(!isInteger(a)) {
+            return dodawanieFloatDoInt(a, b);
+        } else {
+            int aa = Integer.valueOf(a);
+            int bb = Integer.valueOf(b);
+
+            if(aa<=100 && bb<=100){
+                return Integer.toString(aa+bb);
+            }
+            return "etam co mnie to";
         }
         try {
             int aa = Integer.parseInt(a);
@@ -59,5 +71,24 @@ public class Dodawanie {
                 return ingridient1.toLowerCase()+" i "+ingridient2.toLowerCase()+" :)";
             }
         }
+
+       
+    }
+    
+    private static boolean isInteger(String s){
+        try { 
+            Integer.parseInt(s); 
+        } catch(NumberFormatException e){ 
+            return false; 
+        }
+        return true;
+    }
+            
+    private static String dodawanieFloatDoInt(String a, String b){
+        float aa = Float.valueOf(a);
+        int bb = Integer.valueOf(b);
+        System.out.println(aa+bb);
+        return Float.toString(aa+bb);
+
     }
 }
