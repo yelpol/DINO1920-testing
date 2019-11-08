@@ -1,2 +1,2 @@
 language: java
-script: mvn install -f SuperDodawanie/pom.xml"
+script: mvn install -f "SuperDodawanie/pom.xml"
