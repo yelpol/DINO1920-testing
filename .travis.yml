@@ -1,3 +1,2 @@
 language: java
-before_script: cd SuperDodawanie
-script: mvn
+script: mvn install -f SuperDodawanie/pom.xml"
