@@ -1,2 +1,2 @@
+script: bash script.sh
 language: java
-script: mvn install -f "SuperDodawanie/pom.xml"
