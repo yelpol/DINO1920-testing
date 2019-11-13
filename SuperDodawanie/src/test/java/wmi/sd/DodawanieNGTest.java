@@ -46,6 +46,7 @@ public class DodawanieNGTest {
             String result = Dodawanie.dodawanie(a, b);
             assertEquals(result, expResult);
         }
+    }
     
 
     @Test
@@ -97,6 +98,7 @@ public class DodawanieNGTest {
             String result = Dodawanie.dodawanie(a, b);
             assertEquals(result, expResult);
         }
+    }
 }
 
 
