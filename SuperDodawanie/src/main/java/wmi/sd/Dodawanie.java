@@ -40,14 +40,12 @@ public class Dodawanie {
             }
         }
         catch (java.lang.NumberFormatException e) {
-          //lecimy dalej!
+         
         }
-        //proszę dodawać nowe ficzery tutaj o
-        //     |
-        //    \/
-
-
-        //jeżeli żaden inny nasz feature nie obsługuje tych stringów to po prostu je zmergujmy
+        
+        
+        
+        
         return a+b;
     }
     static class PizzaFactory{
