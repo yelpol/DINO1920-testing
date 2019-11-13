@@ -29,7 +29,7 @@ public class Dodawanie {
             if(aa<=100 && bb<=100){
                 return Integer.toString(aa+bb);
             }
-            return "etam co mnie to";
+       
         }
         try {
             int aa = Integer.parseInt(a);
