@@ -74,4 +74,25 @@ public class MegaMnozenieNGTest {
             assertEquals(result, expResult);
         }
     }
+    
+    
+    @Test
+    public void testMnozenie4() {
+        System.out.println("mnozenie");
+        String a = "0";
+        String b = "string";
+        String expResult = "";
+        String result = MegaMnozenie.mnozenie(a, b);
+        assertEquals(result, expResult);
+    }
+    
+    @Test
+    public void testMnozenie5() {
+        System.out.println("mnozenie");
+        String a = "10";
+        String b = "string";
+        String expResult = "stringstringstringstringstringstringstringstringstringstring";
+        String result = MegaMnozenie.mnozenie(a, b);
+        assertEquals(result, expResult);
+    }
 }
