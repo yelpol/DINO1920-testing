@@ -46,7 +46,7 @@ public class DodawanieNGTest {
             String result = Dodawanie.dodawanie(a, b);
             assertEquals(result, expResult);
         }
-    }
+    
 
     @Test
     public void testPizzy(){
@@ -70,7 +70,7 @@ public class DodawanieNGTest {
         result = Dodawanie.dodawanie("fasfasfa", "Dafsoafsopa");
         assertEquals(result, "fasfasfa" +"Dafsoafsopa");
     }
-}
+
 
     
     @Test
@@ -97,6 +97,6 @@ public class DodawanieNGTest {
             String result = Dodawanie.dodawanie(a, b);
             assertEquals(result, expResult);
         }
-    }
 }
+
 
