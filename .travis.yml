@@ -1,2 +1,2 @@
-script: ./script.sh
+script: bash script.sh
 language: java
