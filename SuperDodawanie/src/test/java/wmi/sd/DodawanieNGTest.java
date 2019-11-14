@@ -99,6 +99,29 @@ public class DodawanieNGTest {
             assertEquals(result, expResult);
         }
     }
+
+    @Test
+    public void testDodawanie5() {
+        System.out.println("dodawanie5");
+        String a = "1250";
+        String b = "8";
+        String expected = "SPECJALNY WYNIK HEX DLA CIEBIE: 9c4";
+        String result = Dodawanie.dodawanie(a, b);
+        assertEquals(result, expected);
+    }
+
+    @Test
+    public void testDodawanie6() {
+        System.out.println("dodawanie6");
+        Random r = new Random();
+        for(int i = 0; i < 5; i++){
+            int a = r.nextInt((1200 - 1100) + 1) + 1100;
+            int b = r.nextInt(100);
+            String expected = "HEX: " + Integer.toHexString(a+b);
+            String result = Dodawanie.dodawanie(Integer.toString(a), Integer.toString(b));
+            assertEquals(result, expected);
+        }
+    }
 }
 
 
