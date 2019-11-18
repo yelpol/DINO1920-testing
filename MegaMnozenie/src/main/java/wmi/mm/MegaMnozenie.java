@@ -19,6 +19,7 @@ public class MegaMnozenie
             // "a" and "b" can be parsed to int
             if(isParsableToInt(a) && isParsableToInt(b))
             {
+
                 int aa = Integer.parseInt(a);
                 int bb = Integer.parseInt(b);
                 if(aa <=100 && bb <=100)
@@ -28,7 +29,9 @@ public class MegaMnozenie
                 else 
                 {
                     throw new IllegalArgumentException();
-                }   
+                }
+                
+
             }
             // Only "a" can be parsed to int OR
             // only "b" can be parsed to int

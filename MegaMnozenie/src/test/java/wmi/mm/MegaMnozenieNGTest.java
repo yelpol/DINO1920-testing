@@ -95,4 +95,23 @@ public class MegaMnozenieNGTest {
         String result = MegaMnozenie.mnozenie(a, b);
         assertEquals(result, expResult);
     }
+
+    @Test
+    public void HexOutputDlaLiczb101_200() {
+        System.out.println("mnozenie");
+        String a = "130";
+        String b = "104";
+        String expResult = "Hex: 34d0";
+        String result = MegaMnozenie.mnozenie(a, b);
+        assertEquals(result, expResult);
+    }
+    @Test
+    public void HexOutput1DlaLiczb101_200() {
+        System.out.println("mnozenie");
+        String a = "101";
+        String b = "150";
+        String expResult = "Hex: 3b2e";
+        String result = MegaMnozenie.mnozenie(a, b);
+        assertEquals(result, expResult);
+    }
 }
