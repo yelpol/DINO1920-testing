@@ -30,7 +30,13 @@ public class MegaMnozenie
                 {
                     throw new IllegalArgumentException();
                 }
-                
+                if((aa >=101 && aa<= 200) && (bb >= 101 && bb <=200)){
+                    return "Hex: " + Integer.toHexString(aa*bb);
+                }
+                else
+                {
+                    throw new IllegalArgumentException();
+                }
 
             }
             // Only "a" can be parsed to int OR
